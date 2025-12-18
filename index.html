@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Users Directory</h1>
+    <p>Browse and manage user information</p>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name or email">
+    <button id="sortBtn">Sort A–Z</button>
+  </div>
+
+  <p id="loading" class="status">Loading users...</p>
+  <p id="error" class="status error"></p>
+
+  <div id="usersContainer" class="cards-container"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn">&times;</span>
+      <div id="userDetails"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
